@@ -134,7 +134,35 @@ class JsonFoodInfo {
     "foodRating": 4.8,
     "hasVariant": false,
     "foodImg": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "category": "Drinks",
+    "foodName": "Mango Lassi",
+    "foodPrice": 5.49,
+    "foodDescription": "Refreshing yogurt-based drink with mango pulp and a hint of cardamom.",
+    "foodRating": 4.7,
+    "hasVariant": false,
+    "foodImg": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "category": "Drinks",
+    "foodName": "Thandai",
+    "foodPrice": 6.99,
+    "foodDescription": "Traditional Indian cold drink made with milk, nuts, and aromatic spices.",
+    "foodRating": 4.6,
+    "hasVariant": false,
+    "foodImg": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "category": "Drinks",
+    "foodName": "Rose Falooda",
+    "foodPrice": 7.49,
+    "foodDescription": "Refreshing rose-flavored milkshake with basil seeds, vermicelli, and ice cream.",
+    "foodRating": 4.8,
+    "hasVariant": false,
+    "foodImg": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
+   
 ]
 ''';
 }

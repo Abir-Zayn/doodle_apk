@@ -35,7 +35,6 @@ class _RestaurantProfileState extends State<RestaurantProfile>
   //categorie list
   late List<String> categories;
   late TabController _tabController;
-  final Map<String, GlobalKey> _categoryKeys = {};
 
   @override
   void initState() {
@@ -49,23 +48,16 @@ class _RestaurantProfileState extends State<RestaurantProfile>
     _scrollController.addListener(_onScroll);
   }
 
-   void _onScroll() {
+  void _onScroll() {
     final offset = _scrollController.offset;
     int newIndex = 0;
 
     // Calculate the current category based on scroll position
     for (int i = 0; i < categories.length; i++) {
-      final category = categories[i];
-      final key = _categoryKeys[category];
-      if (key != null) {
-        final context = key.currentContext;
-        if (context != null) {
-          final box = context.findRenderObject() as RenderBox;
-          final categoryOffset = box.localToGlobal(Offset.zero).dy;
-          if (categoryOffset <= offset + 100) { // Adjust the threshold as needed
-            newIndex = i;
-          }
-        }
+      if (offset >= _getCategoryOffset(i) &&
+          offset < _getCategoryOffset(i + 1)) {
+        newIndex = i;
+        break;
       }
     }
 
@@ -76,16 +68,20 @@ class _RestaurantProfileState extends State<RestaurantProfile>
   }
 
   double _getCategoryOffset(int index) {
-    final category = categories[index];
-    final key = _categoryKeys[category];
-    if (key != null) {
-      final context = key.currentContext;
-      if (context != null) {
-        final box = context.findRenderObject() as RenderBox;
-        return box.localToGlobal(Offset.zero).dy;
-      }
+    // Calculate the scroll offset for each category
+    double offset = 0;
+    for (int i = 0; i < index; i++) {
+      offset += _getCategoryHeight(i);
     }
-    return 0.0;
+    return offset;
+  }
+
+  double _getCategoryHeight(int index) {
+    // Calculate the height of each category section
+    final category = categories[index];
+    final itemCount =
+        foodItemList.where((item) => item.category == category).length;
+    return itemCount * 100.0; // Adjust based on your item height
   }
 
   @override
