@@ -19,3 +19,16 @@ This project is meant for testing the app design that has been assigned by the W
     -> splash 2 -> Login/SignUp -> Home -> Restaurant Menu -> Restaurant Profile
     -> Food Item(Has Variation/No Variation) -> Demo Cart Items -> Demo Success Alert
 
+
+-Project Screenshot 
+
+![Screenshot 2025-02-02 191550](https://github.com/user-attachments/assets/23b07d19-a96a-44cb-911b-174f30cbf42e)
+![Screenshot 2025-02-02 191515](https://github.com/user-attachments/assets/3a79fc7b-1002-4284-8db7-75fd626c1f59)
+![Screenshot 2025-02-02 191502](https://github.com/user-attachments/assets/b37f996f-ea06-4d56-a389-82d4555e8312)
+![Screenshot 2025-02-02 191455](https://github.com/user-attachments/assets/7fc9b035-491e-46cf-bd13-5a3887cd85bc)
+![Screenshot 2025-02-02 191640](https://github.com/user-attachments/assets/a0a34c21-bf03-44fc-ba36-0a015a89605e)
+![Screenshot 2025-02-02 191629](https://github.com/user-attachments/assets/cdd9c9cd-533d-48c5-9b4b-afe14bd8f009)
+![Screenshot 2025-02-02 191620](https://github.com/user-attachments/assets/b863cd1f-5148-4424-a345-e5d4ec87e3bb)
+![Screenshot 2025-02-02 191609](https://github.com/user-attachments/assets/e22a5863-17d3-47c8-b68f-9c67cfa970fc)
+![Screenshot 2025-02-02 191601](https://github.com/user-attachments/assets/3af10ac5-ebe4-4e26-9c4e-3073500514c5)
+
